@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Student Dashboard</h1>
+    <select id="studentSelector" onchange="switchStudent()">
+      <option value="student1">Riya</option>
+      <option value="student2">Arjun</option>
+      <option value="student3">Meera</option>
+    </select>
+  </header>
+
+  <main id="dashboard">
+    <section>
+      <h2 id="studentName">Riya</h2>
+      <p>Attendance: <span id="attendance">92%</span></p>
+      <p>Grades: <span id="grades">A+</span></p>
+      <p>Remarks: <span id="remarks">Excellent performance this term!</span></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
